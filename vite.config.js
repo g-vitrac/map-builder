@@ -5,8 +5,8 @@ export default defineConfig({
         fs: {
             allow: [
                 searchForWorkspaceRoot(process.cwd()),
-                './dist/modules'
-            ]
+                './dist/modules',
+            ],
         }
     }
 })
