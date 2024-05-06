@@ -1,10 +1,9 @@
 
 
 export const ModuleService = (() => {
-    const modulePath = 'modules';    
     return {
         getModule: async (moduleName) => {
-            return (await fetch(`${modulePath}/${moduleName}.wgsl`)).text();
+            return (await fetch(`dist/modules/${moduleName}.wgsl`)).text();
         }
     }
 })();
